@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Eventos</title>
+    <link rel="stylesheet" href="listarEventos.css" />
+</head>
+<body>
+<h1>Eventos</h1>
+
+<aside className="main-container">
+    <ul>
+        <li  th:each="evento : ${eventos}" th:id="evento.id">
+            <img th:src="${evento.imagem}" />
+            <footer>
+                <strong th:text="${evento.nome}"></strong>
+                <p th:text="${evento.genero}"></p>
+            </footer>
+
+            <div className="buttons">
+                <button  type="button">
+                    <a th:href="@{'/evento/' + ${evento.nome}}">
+                        <span th:text="${evento.nome}"></span>
+                    </a>
+                </button>
+            </div>
+        </li>
+    </ul>
+</aside>
+</body>
+</html>

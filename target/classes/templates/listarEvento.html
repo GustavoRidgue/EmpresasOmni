@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="listarEvento.css">
+</head>
+<body>
+<aside className="main-container">
+            <img th:src="${evento.imagem}" th:alt="${evento.nome}" />
+            <footer>
+                <div id="h1">
+                    <h1 th:text="${evento.nome}"></h1>
+                </div>
+                <div id="Nomes">
+                <p><strong>Genero:</strong> <span th:text="${evento.genero}"></span></p>
+                <p><strong>Ínicio</strong> <span th:text="${evento.horaInicio}"></span></p>
+                <p><strong>Fim:</strong> <span th:text="${evento.horaFim}"></p>
+                <p><strong>Descrição:</strong> <span th:text="${evento.descricao}"></p>
+                <p><strong>Data:</strong> <span th:date="${evento.dataEvento}"></p>
+                <p><strong>Rua:</strong> <span th:text="${evento.rua}"></p>
+                <p><strong>Estado:</strong> <span th:text="${evento.estado}"></p>
+                <p><strong>Número:</strong> <span th:text="${evento.numero}"></p>
+                <p><strong>Bairro:</strong> <span th:text="${evento.bairro}"></p>
+                </div>
+            </footer>
+</aside>
+
+
+
+</body>
+</html>

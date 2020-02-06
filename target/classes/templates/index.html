@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>Qbrada</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="Main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <a href="index.html" class="logo">Qbrada</a>
+        <nav id="nav">
+            <a href="/">Home</a>
+            <a href="/cadastro">cadastro</a>
+            <a href="/eventos">Eventos</a>
+            <a href="/empresas">Empresas parceiras</a>
+
+
+
+        </nav>
+
+    </div>
+</header>
+
+
+
+<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+<!-- Banner -->
+<section id="banner">
+    <div class="buscar">
+        <form action="/evento " method="get">
+            <input type="search" id="busca" name="nome" placeholder="Pesquisar evento">
+            <button type="submit">Pesquisar</button>
+        </form>
+        <p th:text="${msg}"></p>
+    </div>
+    <div class="inner">
+        <img src="images/index.jpeg"/>
+        <ul class="actions">
+            <hr>
+
+            <h1>Eventos ativos</h1>
+            <li><a href="/eventos" class="button alt">Eventos</a></li>
+        </ul>
+
+    </div>
+</section>
+<aside class="Sobre">
+    <div class="tituloSobre">
+        <p>Sobre nos </p>
+    </div>
+
+    <div class="DescricaoSobre">
+        <p>
+            Nos somos colaboradores de projetos sociais que tem ideia de ajudar as comunidades a ter acesso a exposição à cultura.
+            O site quebrada tem como o objetivo visar pela cultura no bairro através de entretenimento
+        </p>
+    </div>
+</aside>
+
+
+
+</body>
+</html>
