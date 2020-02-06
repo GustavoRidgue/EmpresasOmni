@@ -98,5 +98,9 @@ public class EventoController {
         model.addAttribute("desativar", "Um item foi desativado");
         return "redirect:/eventos";
     }
+    @GetMapping("/empresas")
+    public String mostrarEmpresas(){
+        return "empresas";
+    }
 
 }
